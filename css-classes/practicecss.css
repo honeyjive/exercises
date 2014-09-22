@@ -4,6 +4,26 @@ header {
 	height: 100px;
 }
 
+.logo {
+	background-color: #a1f5ff;
+	margin: 3px;
+	float: left;
+}
+
+img {
+	height: 50px;
+	width: 50px;
+}
+
+nav {
+	background-color: #7f004b;
+	margin: 2px;
+	padding: 2px;
+	float: center;
+	height: 20px;
+	width: 100%;
+}
+
 .sidebar {
 	background-color: #425fb2;
 	position: relative;
