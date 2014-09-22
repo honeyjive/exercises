@@ -6,7 +6,7 @@ header {
 
 .sidebar {
 	background-color: #425fb2;
-	float: left;
+	position: relative;
 	height: 70px;
 	width: 70px;
 }
