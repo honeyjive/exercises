@@ -9,6 +9,8 @@ header {
 	background-color: #74a259;
 }
 
+/*FIX THE DIVS FROM TOUCHING EACH OTHER OR WRAPPING*/
+
 .main, .sidebar {
 	float: left;
 	height: 50%;
@@ -18,13 +20,11 @@ header {
 .main {
 	width: 60%;
 	margin: 1%;
-	clear: right;
 }
 
 .sidebar {
 	width: 36%;
 	margin: 1%;
-	clear: left;
 }
 
 footer {
