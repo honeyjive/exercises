@@ -18,11 +18,13 @@ header {
 .main {
 	width: 60%;
 	margin: 1%;
+	clear: right;
 }
 
 .sidebar {
 	width: 36%;
 	margin: 1%;
+	clear: left;
 }
 
 footer {
