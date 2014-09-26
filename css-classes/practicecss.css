@@ -8,6 +8,13 @@ header {
 	padding: 5px 0 5px 5px;
 }
 
+.logo {
+	border: 1px solid violet;
+	margin: 1px;
+	padding: 5px 5px 5px 5px;
+	width: 100px;
+}
+
 .sidebar {
 	border: 1px solid aqua;
 	margin: 1px;
@@ -17,6 +24,12 @@ header {
 
 footer {
 	border: 1px solid green;
+	margin: 1px;
+	padding: 5px 0 5px 5px;
+}
+
+nav {
+	border: 1px solid teal;
 	margin: 1px;
 	padding: 5px 0 5px 5px;
 }
