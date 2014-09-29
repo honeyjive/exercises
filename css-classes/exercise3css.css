@@ -1,40 +1,39 @@
 body {
-	background-color: #525051;
-	color: white;
+	border: #525051;
 	text-align: center;
 }
 
 header {
-	background-color: #a1a1a1;
+	border: #a1a1a1;
 }
 
 .content {
 	width: 100%;
 	height: 80%;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 .widget {
 	height: 100px;
 	width: 100px;
 	margin: 1.5%;
-	background-color: #ffbe0e;
+	border: #ffbe0e;
 	display: inline-block;
 }
 
 .blue {
-	background-color: #0e77be;
+	border: #0e77be;
 }
 
 .gadget {
-	background-color: #74a259;
+	border: #74a259;
 	border-radius: 25px;
 }
 
 .round {
-	background-color: black;
+	border: black;
 }
 
 footer {
-	background-color: #b5dc10;
+	border: #b5dc10;
 }

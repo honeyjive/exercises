@@ -1,0 +1,35 @@
+/* ---------------------------------------------------------- */
+/* Float Examples for MakerSquare Front-End Class ----------- */
+/* created by Elyse Holladay @elyseholladay ----------------- */
+/* ---------------------------------------------------------- */
+
+/* Example 10 */
+
+.header {
+	width: 100%;
+}
+
+.container {
+	float: left;
+	width: 80%;
+	margin: 0 auto; /*question: why does the margin not align it to center?*/
+}
+
+.sidebar {
+	float: left;
+	width: 40%%;
+	height: 250px;
+}
+
+.main-content {
+	float: left;
+	width: 60%;
+	height: 250px;
+}
+
+.footer {
+	clear: both;
+	width: 100%;
+}
+
+/* what do you have to add to make the sidebar and content and footer not be the full width of the browser? */

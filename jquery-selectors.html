@@ -1,0 +1,108 @@
+<html>
+<head>
+  <title>jQuery Selectors</title>
+  <style type="text/css">
+    .item {
+      padding: 8px;
+      width: 200px;
+      background: #ccc;
+    }
+    .item.active {
+      background: #cfc;
+    }
+  </style>
+</head>
+<body>
+
+<form class="new-item">
+  <label>Pre-Filled Name Input: </label><input class="name" type="text" value="Mitch Thomson" />
+  <br />
+  <label>Pre-Filled Price Input: </label>
+  <input type="text" class="price" value="Mitch is $19">
+  <br />
+  <input class="submit" type="submit" value="SUBMIT!"></input>
+</form>
+
+<div id="items">
+  <div class="item">
+    <label>Item One</label>
+    <div class="price">$11</div>
+  </div>
+
+  <div class="item active">
+    <label>Item Two</label>
+    <div class="price">$22</div>
+  </div>
+
+  <div class="item">
+    <label>Item Three</label>
+    <div class="price">$33</div>
+  </div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+// TODO
+// exercise 1.1
+$('.item.active');
+
+// exercise 1.2
+$('.new-item .price');
+
+// exercise 2.1
+var $form = $('form.new-item');
+$('.name', $form).val();
+
+// exercise 2.2
+var $form = $('form.new-item');
+$('.price', $form).val();
+
+// exercise 2.3 **not sure if I did this one correctly**
+$('form.new-item').on('submit', function (e) {
+  e.preventDefault();
+  var newItemName = $('.price', this).val();
+  console.log('You entered:', newItemName);
+});
+
+// exercise 3.1
+$('.item.active').append('<p>Buy one, Get one!!</p>');
+
+// exercise 3.2 **ask how to prevent the "Item 3" from disappearing**
+$('.item:last').empty();
+
+// exercise 3.3
+$('.item:last').append('<div class="price">Item Three<br>$121</div>');
+
+// exercise 4.1
+$('.item:first')
+  .css('width', 60)
+  .css('font-size', 25);
+
+// exercise 4.2
+$('.item.active')
+  .css('font-size', 30)
+  .css('background-color', 'lime');
+
+// exercise 4.3 
+$('body')
+  .css('background-color', 'teal')
+  .find('.item')
+    .css('font-size', 15)
+    .css('height', 60)
+    .end();
+
+// exercise 4.4 **this is wrong, ask around on how to receive correction
+$('form.new-item').on('submit', function (e) {
+  e.preventDefault();
+
+  var newItemName = $('.name', this).val();
+  console.log('You entered:', newItemName);
+});
+  $('body').find('#items').append('<p>Mitch Thomson</p>')
+
+
+</script>
+</body>
+</html>
