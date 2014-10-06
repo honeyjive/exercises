@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</html>
+<body>
+	<button id="scissors">scissors</button>
+	<button id="rock">rock</button>
+	<button id="paper">paper</button>
+
+	<h1 id="decision">OUTCOME GOES HERE</h1>
+
+	<script type="text/javascript">
+		$('#scissors').on('click', function(){
+			var result = compare('scissors', computerChoice());
+			$('#decision').html(result);
+		});
+
+		$('#rock').on('click', function(){
+			var result = compare('rock', computerChoice());
+			$('#decision').html(result);
+		});
+
+		$('#paper').on('click', function(){
+			var result = compare('paper', computerChoice());
+			$('#decision').html(result);
+		});
+
+		var compare = function(me, opponent) {
+			if (me === 'rock') {
+				if (opponent === 'rock') {
+					return 'Tie.';
+				} else if (opponent === 'paper') {
+					return 'I lose.';
+				} else if (opponent === 'scissors') {
+					return 'I win.';
+				}
+			} else if (me === 'paper') {
+				if (opponent === 'rock') {
+					return 'Win.';
+				} else if (opponent === 'paper') {
+					return 'Tie.';
+				} else if (opponent === 'scissors') {
+					return 'Fail.';
+				}
+			} else if (me === 'scissors') {
+				if (opponent === 'rock') {
+					return 'I die.';
+				} else if (opponent === 'paper') {
+					return 'I live.';
+				} else if (opponent === 'scissors') {
+					return 'Draw.';
+				}
+			}
+		};
+
+		var computerChoice = function () {
+			var random = Math.random();
+			if (random < 0.3333) {
+				return 'rock';
+			} else if (random < 0.6777) {
+				return 'paper';
+			} else {
+				return 'scissors';
+			}
+		};
+
+	</script>
+</body>
